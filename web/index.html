@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Base href -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="backlocation">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+<!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7mtSHZ5tjIOiYXsnal4WwqZSO4wHv8xw"></script>-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7mtSHZ5tjIOiYXsnal4WwqZSO4wHv8xw&libraries=drawing"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@googlemaps/markerclusterer@2.5.3/dist/index.umd.min.js"></script>
+
+  <title>backlocation</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<script src="flutter_bootstrap.js" async></script>
+
+<script>
+  const firebaseConfig = {
+       apiKey: "AIzaSyC5UuynoFwHVP-pkxlAVgUSzutZjJWJhFg",
+       authDomain: "geolocation-d39fd.firebaseapp.com",
+       databaseURL: "https://geolocation-d39fd-default-rtdb.firebaseio.com",
+       projectId: "geolocation-d39fd",
+       storageBucket: "geolocation-d39fd.appspot.com",
+       messagingSenderId: "731094034670",
+       appId: "1:731094034670:web:d85b07e799462177136bff",
+       measurementId: "G-SGR0LQNGZN",
+     };
+
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>

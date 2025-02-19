@@ -1,0 +1,55 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "geolocation-d39fd",
+          "appId": "1:731094034670:android:16bdc89a1c54ab1a136bff",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "geolocation-d39fd",
+          "configurations": {
+            "android": "1:731094034670:android:16bdc89a1c54ab1a136bff",
+            "ios": "1:731094034670:ios:8b7bfaf71b66e503136bff",
+            "macos": "1:731094034670:ios:8b7bfaf71b66e503136bff",
+            "web": "1:731094034670:web:d85b07e799462177136bff",
+            "windows": "1:731094034670:web:a2a13019b09b0db9136bff"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
