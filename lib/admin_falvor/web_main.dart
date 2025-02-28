@@ -83,8 +83,8 @@ class _AdminWebHomeScreenState extends State<AdminWebHomeScreen> {
 
 
   /// API URLs
-  final String directionsUrl =const String.fromEnvironment("API_URL", defaultValue: "https://backlocation-alis-projects-b1258dc7.vercel.app/api/getDirections");
-  final String devUrl = "https://backlocation-alis-projects-b1258dc7.vercel.app/api/getDirections";
+  final String directionsUrl = "https://monitorlocation.vercel.app/api/getDirections";
+  final String devUrl = "https://monitorlocation.vercel.app/api/getDirections";
 
   // http://localhost:3000/api/getDirections
 
